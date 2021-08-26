@@ -1,0 +1,45 @@
+/* Import Poppins - Google Fonts */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  /* background color */
+  background: #111317;
+  /* centering all items */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* giving height */
+  min-height: 100vh;
+}
+/* now lets give spacing between the butons :) */
+.btn {
+  margin: 40px;
+}
+button:last-child {
+  background: #f4561f;
+}
+button {
+  padding: 15px 70px;
+  cursor: pointer;
+  font-size: 24px;
+  background: #4561ff;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+}
+button:hover {
+  animation: color 6s linear infinite;
+}
+@keyframes color {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
